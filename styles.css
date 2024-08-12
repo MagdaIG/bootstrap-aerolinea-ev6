@@ -1,0 +1,99 @@
+/* Estilo para la barra de navegación */
+.custom-navbar {
+    background-color: #051B54;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link,
+.custom-navbar .navbar-toggler-icon {
+    color: white;
+}
+
+/* Flechas hacia abajo solo en "Ofertas y destinos" y "Mis viajes" */
+.custom-navbar .nav-link.dropdown {
+    position: relative;
+}
+
+.custom-navbar .nav-link.dropdown::after {
+    content: " \25BC"; /* Flecha hacia abajo */
+    font-size: 0.7em;
+    margin-left: 0.3em;
+}
+
+/* Estilo para el botón de inicio de sesión */
+.custom-navbar .btn.custom-navbar-btn.active {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparente con el mismo tono del navbar */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde semi-transparente */
+    padding: 0.375rem 0.75rem; /* Espaciado interno para el botón */
+    border-radius: 50px; /* Borde ovalado */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+.custom-navbar .btn.custom-navbar-btn.active:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Aclara el color de fondo al pasar el ratón */
+}
+
+/* Estilo para la barra de navegación con bordes */
+.nav-pills .nav-link {
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent; /* Sin color de fondo para el botón activo */
+    color: inherit; /* Mantiene el color de texto */
+}
+
+/* Estilo para la tarjeta principal con sombra */
+.card.p-4 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la sección debajo de la barra de navegación */
+.card.mb-3 {
+    background-color: #62DAD3;
+    color: black; /* Color de texto negro para contrastar con el fondo */
+}
+
+/* Añadir margen interno a la tarjeta */
+.card-body {
+    margin: 20px; /* Ajusta el valor según sea necesario */
+}
+
+/* Opcional: Si quieres asegurar que los textos dentro de la tarjeta sigan siendo legibles */
+.card-title,
+.card-text,
+.btn-link {
+    color: black;
+}
+
+/* Ajuste de imagen */
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes adicionales */
+#pills-tab {
+    justify-content: flex-start; /* Alinea la barra de botones a la izquierda */
+}
+
+/* Estilo para el formulario */
+.form-label, .form-control {
+    color: #051B54;
+}
+
+.form-control::placeholder {
+    color: #051B54;
+}
+
+/* Establecer Verdana como la única fuente */
+body {
+    font-family: Verdana;
+}
+
+/* Establecer Gill Sans para "AeroVia Express" */
+.gill-sans {
+    font-family: 'Gill Sans', sans-serif;
+}
